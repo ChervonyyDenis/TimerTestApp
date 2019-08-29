@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="timer-wrap">
+        <span class="timer">{{ticks | formatTime}}</span>
+
+        <div class="control-panel">
+            <button [disabled]='isTimerActive' (click)="startTimer()" class="button-common">Start</button>
+            <button [disabled]='!isTimerActive' #stopBtn class="button-common">Stop</button>
+            <button [disabled]='!isTimerActive || isStopBtnClicked' #pauseBtn class="button-common">{{pauseBtnText}}</button>
+            <button [disabled]='!isTimerActive' (click)='resetTimer()' class="button-common">Reset</button>
+        </div>
+    </div>
+
+
+</div>

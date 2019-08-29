@@ -1,0 +1,22 @@
+.container {
+    background-color: #ab9a86;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    flex: 1 0 0;
+    align-items: center;
+    .timer-wrap {
+        text-align: center;
+        width: 50%;
+        min-width: 525px;
+        position: relative;
+        .timer {
+          display: block;
+          margin-bottom: 50px;
+          font-size: 60px;
+          font-family: sans-serif;
+        }
+    }
+
+}
